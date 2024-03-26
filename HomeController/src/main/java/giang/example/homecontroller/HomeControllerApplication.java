@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 public class HomeControllerApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(HomeControllerApplication.class, args);
 	}
