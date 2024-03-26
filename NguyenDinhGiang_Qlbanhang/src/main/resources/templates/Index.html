@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar content here -->
+</nav>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <!-- Carousel content here -->
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm" th:each="product : ${products}">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" th:src="@{/images/product-placeholder.png}" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title" th:text="${product.name}">Product Name</h5>
+                    <p class="card-text" th:text="${product.description}">Product Description</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
