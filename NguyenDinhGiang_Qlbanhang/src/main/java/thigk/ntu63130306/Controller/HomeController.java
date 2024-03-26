@@ -23,11 +23,18 @@ public class HomeController {
     }
 
     @GetMapping("/timkiem")
-    public String searchProduct(@RequestParam String code, Model model) {
-        Product foundProduct = productService.findByCode(code);
-        model.addAttribute("foundProduct", foundProduct);
-        return "searchResult"; // Trả về một trang mới với kết quả tìm kiếm
+    public String searchProduct(@RequestParam(required = false) String code, Model model) {
+        if (code != null) {
+            Product product = productService.findByCode(code);
+            model.addAttribute("product", product);
+            return "searchResult"; // Trả về trang kết quả tìm kiếm
+        }
+        // Nếu không có tham số 'code', chỉ hiển thị trang tìm kiếm (có thể là form tìm kiếm)
+        return "timkiem";
     }
+
+
+
 
     @GetMapping("/them")
     public String showAddProductForm(Model model) {

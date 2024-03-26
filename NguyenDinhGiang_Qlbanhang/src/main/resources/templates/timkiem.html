@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Kiếm Sản Phẩm</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Tìm Kiếm Sản Phẩm</h2>
+    <form th:action="@{/timkiem}" method="get">
+        <div class="form-group">
+            <label for="code">Mã Sản Phẩm</label>
+            <input type="text" class="form-control" id="code" name="code" placeholder="Nhập mã sản phẩm" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+    </form>
+</div>
+</body>
+</html>
