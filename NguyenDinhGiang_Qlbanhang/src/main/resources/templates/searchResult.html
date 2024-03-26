@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Kết Quả Tìm Kiếm</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Kết Quả Tìm Kiếm</h2>
+    <div th:if="${product != null}">
+        <p>Mã Sản Phẩm: <span th:text="${product.code}"></span></p>
+        <p>Tên Sản Phẩm: <span th:text="${product.name}"></span></p>
+        <p>Giá: <span th:text="${product.price}"></span></p>
+        <p>Mô Tả: <span th:text="${product.description}"></span></p>
+    </div>
+    <div th:if="${product == null}">
+        <p>Không tìm thấy sản phẩm.</p>
+    </div>
+</div>
+</body>
+</html>

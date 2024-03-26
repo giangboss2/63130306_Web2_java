@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách sản phẩm</title>
+    <!-- Thêm Bootstrap hoặc CSS của bạn ở đây nếu cần -->
+</head>
+<body>
+<div class="container">
+    <h1>Danh Sách Sản Phẩm</h1>
+    <div th:each="product : ${products}">
+        <p>Code: <span th:text="${product.code}"></span></p>
+        <p>Name: <span th:text="${product.name}"></span></p>
+        <p>Price: <span th:text="${product.price}"></span></p>
+        <p>Description: <span th:text="${product.description}"></span></p>
+        <hr>
+    </div>
+</div>
+</body>
+</html>
