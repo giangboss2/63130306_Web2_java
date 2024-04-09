@@ -12,9 +12,9 @@ public class ProductService {
 
     public ProductService() {
         // Khởi tạo danh sách sản phẩm mẫu
-        products.add(new Product("P01", "Product 1", 100.0, "Description 1"));
-        products.add(new Product("P02", "Product 2", 200.0, "Description 2"));
-        products.add(new Product("P03", "Product 3", 300.0, "Description 3"));
+        products.add(new Product("P01", "áo len ", 100.0, "Description 1"));
+        products.add(new Product("P02", "quần zen", 200.0, "Description 2"));
+        products.add(new Product("P03", "mũ", 300.0, "Description 3"));
     }
 
     public List<Product> findAll() {
