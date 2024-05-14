@@ -11,5 +11,5 @@ public interface IMovieService {
     List<MovieDTO> findAllShowingMovies();
     MovieDTO getById(Integer movieId);
     List<MovieDTO> findAllShowingMoviesByName(String name);
-    List<MovieDTO> delete(String name);
+
 }

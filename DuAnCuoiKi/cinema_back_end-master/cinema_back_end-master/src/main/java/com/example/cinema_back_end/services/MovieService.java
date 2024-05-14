@@ -38,9 +38,6 @@ public class MovieService implements IMovieService{
                 .collect(Collectors.toList());
     }
 
-    @Override
-    public List<MovieDTO> delete(String name) {
-        return movieRepository.findMoviesByIsShowingAndNameContaining(1,name);
-    }
+
 
 }
