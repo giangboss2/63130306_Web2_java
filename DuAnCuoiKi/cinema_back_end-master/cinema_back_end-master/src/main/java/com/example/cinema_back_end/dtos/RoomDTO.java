@@ -1,7 +1,5 @@
 package com.example.cinema_back_end.dtos;
-
 import lombok.Data;
-
 @Data
 public class RoomDTO {
     private int id;
@@ -10,4 +8,5 @@ public class RoomDTO {
     private double totalArea;
     private String imgURL;
     private BranchDTO branch;
+
 }

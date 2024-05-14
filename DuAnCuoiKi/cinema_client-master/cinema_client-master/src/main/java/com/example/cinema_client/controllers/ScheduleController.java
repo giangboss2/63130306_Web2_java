@@ -44,7 +44,7 @@ public class ScheduleController {
         HttpEntity<?> entity = new HttpEntity<>(headers);
 
         // Để tạm ngày hôm nay là 30/12
-        LocalDate today = LocalDate.parse("2021-01-05");
+        LocalDate today = LocalDate.parse("2021-12-31");
         ArrayList<LocalDate> listDates = new ArrayList<>();
         listDates.add(today);
         // Lấy ra 10 ngày tính từ hôm nay
