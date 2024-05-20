@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-233.13135.103">
+    <data-source name="postgres@localhost" uuid="06f3c4ad-7120-419f-87c1-bd05dbd73a46">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="bookve@localhost" uuid="06fd6a83-c58e-4608-8e53-f95e8c21b8c7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
