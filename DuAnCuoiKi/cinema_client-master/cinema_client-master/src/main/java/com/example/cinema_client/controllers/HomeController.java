@@ -23,12 +23,13 @@ import java.util.Map;
 @RequestMapping("/")
 public class HomeController {
     @Autowired
-    private RestTemplate restTemplate;
+    private RestTemplate restTemplate;    //dùng để gửi các yêu cầu HTTP đến các API khác.
 
     public static String apiGetShowingMovies = Api.baseURL+"/api/movies/showing";
 
     public static String API_GET_SHOWING_MOVIES_BY_NAME = Api.baseURL+"/api/movies/showing/search";
-
+//Phương thức này gọi API để lấy danh sách các phim đang chiếu và
+// thêm danh sách phim vào model để hiển thị trên trang "home".
     @GetMapping
     public String displayHomePage(Model model){
         ResponseEntity<MovieDTO[]> response = restTemplate.getForEntity(apiGetShowingMovies,MovieDTO[].class);
